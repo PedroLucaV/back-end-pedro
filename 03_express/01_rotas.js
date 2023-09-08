@@ -15,6 +15,20 @@ app.get("/", function(req, res){
     res.send("Hello World, Seja bem vindo!!!") //Resposta do servidor
 })
 
+
+//Agora para criar um caminho no meu site, como por exemplo um caminho: SOBRE; criaremos mais uma rota, agora botando o nome dela:
+
+app.get("/sobre", function(req, res){
+    res.send("Minha pagina sobre rotas!")
+})
+
+app.get("/blog", function(req, res){
+    res.send("Bem vindo ao meu Blog")
+})
+
+app.get("/fotos", function(req, res){
+    res.send("Pagina de fotos")
+})
 //Para executar callback voce coloca a function apos a virgula e coloca o callback no console
 //localhost:8081
 app.listen(8081, function(){ //app.listen é executada e fala pro node que esta rodando, logo o node executa uma função em seguida
