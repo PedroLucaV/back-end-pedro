@@ -12,7 +12,7 @@ const app = express() //a variavel app esta recebendo a funcao que vem do modulo
 //Como crio ela?
 
 app.get("/", function(req, res){
-    res.send("Hello World, Seja bem vindo!!!") //Resposta do servidor
+    res.send("Hello World, Seja bem vindo!") //Resposta do servidor
 })
 
 
