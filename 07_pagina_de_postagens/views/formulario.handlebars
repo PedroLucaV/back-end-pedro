@@ -1,0 +1,17 @@
+<form action="/add" method="POST"> 
+
+{{!--O method é basicamente a forma que ele será enviado para o back-end, como seus dados serão enviados--}}
+
+{{!O Action serve para dizer a rota que os dados serão enviado}}
+    {{!--No html, exitem dois tipos de envio: "get" e "post", qual a diferença?
+    get: ele envia os dados pela URL, ou seja, o que colocarmos aparecerá na URL
+    post: Ele passa os dados sem ser pela URL
+    --}}
+    {{!-- Para enviarmos os dados recebidos para um banco de dados, precisamos definir dois atributos: action e o method --}}
+    <p>Titulo: </p>
+    <input type="text" name="titulo">
+    <p>Conteudo </p>
+    <textarea name="conteudo"></textarea>
+    <br>
+    <button type="submit">Cadastrar Postagem</button>
+</form>

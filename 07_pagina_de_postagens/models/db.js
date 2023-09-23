@@ -1,1 +1,1 @@
-//Pasta para guardar os models criados
+//Pasta para guardar os models criados, este arquivo servirá especificamente para se comunicar com o banco de dados

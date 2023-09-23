@@ -9,7 +9,7 @@ const handlebars = require("express-handlebars")
 //Agora iremos configurar o handlebars como template-engine:
 //Config
     // Template-Engine 
-    app.engine("handlebars", handlebars({defaultLayout: "main"})) //o main é o template padrão da aplicação
+    app.engine("handlebars", handlebars.engine({defaultLayout: "main"})) //o main é o template padrão da aplicação, lembrar de botar o .engine
     app.set("view engine", "handlebars")
 
 //agora criaremos uma pasta chamada: "views", obrigatoriamente assim, e la criaremos uma pasta chamada: "layouts" e depois um arquivo: "main.handlebars"
