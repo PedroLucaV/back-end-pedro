@@ -1,13 +1,13 @@
 const express = require("express");
 const app = express();
-const handlebars = require("express-handlebars");
+const {engine} = require ('express-handlebars');
 //Agora criaremos uma const para receber o banco de dados do models
 const Post = require("./models/Post")
 //E agora ao executar a aplicação, será salvo no banco de dados as informações recebidas
 const PORT = 8081
 
 //Configurando handlebars:
-app.engine('handlebars', handlebars({
+app.engine('handlebars', engine({
     defaultLayout: 'main',
     runtimeOptions: {
         allowProtoPropertiesByDefault: true,
